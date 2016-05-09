@@ -161,7 +161,7 @@ plot(steps_by_interval, type='l', xaxs=&quot;i&quot;, xlab=&quot;&quot;, sub=&qu
 <h2>Imputing missing values</h2>
 <pre class="r"><code>missing_values &lt;- activity[is.na(activity$steps),]</code></pre>
 <p>Total number of missing values in the dataset is 2304.</p>
-<p>Imput missing data with mean number of steps for same interval in allother days.</p>
+<p>Imput missing data with mean number of steps for same interval in all other days.</p>
 <pre class="r"><code>mean_by_int &lt;- aggregate(steps ~ interval, data = complete_cases, mean)
 activity_f &lt;- data.frame(activity)
 get_mean_of_interval &lt;- function(row) {

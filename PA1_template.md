@@ -61,7 +61,7 @@ missing_values <- activity[is.na(activity$steps),]
 
 Total number of missing values in the dataset is 2304.
 
-Imput missing data with mean number of steps for same interval in allother days.
+Imput missing data with mean number of steps for same interval in all other days.
 
 ```r
 mean_by_int <- aggregate(steps ~ interval, data = complete_cases, mean)
